@@ -1,0 +1,8 @@
+# Node & scratch
+node_modules/
+.DS_Store
+*.log
+decode.js
+fix_css.js
+generate_icons.js
+original_game_decoded.js
