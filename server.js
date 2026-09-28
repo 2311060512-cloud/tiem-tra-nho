@@ -23,6 +23,11 @@ const server = http.createServer((req, res) => {
   let reqPath = req.url.split('?')[0];
   if (reqPath === '/' || reqPath === '') reqPath = '/index.html';
 
+  // Khi chạy local dev, tự động dùng file game.dev.js để sửa code là ăn ngay
+  if (reqPath === '/game.js' && fs.existsSync(path.join(__dirname, 'game.dev.js'))) {
+    reqPath = '/game.dev.js';
+  }
+
   const filePath = path.join(__dirname, reqPath);
   const ext = path.extname(filePath).toLowerCase();
   const contentType = MIME_TYPES[ext] || 'application/octet-stream';
