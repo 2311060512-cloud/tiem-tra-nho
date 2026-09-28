@@ -6,4 +6,15 @@ decode.js
 fix_css.js
 generate_icons.js
 original_game_decoded.js
+
+# Các file mã nguồn gốc (Chỉ lưu trên laptop, KHÔNG ĐẨY LÊN GITHUB)
 game.dev.js
+style.dev.css
+index.dev.html
+sw.dev.js
+
+# Công cụ build và server nội bộ (Không cần đưa lên GitHub)
+server.js
+build.js
+package.json
+package-lock.json
